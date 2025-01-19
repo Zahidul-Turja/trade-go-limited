@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
 function NavigatoinTop() {
   return (
@@ -13,6 +13,7 @@ function NavigatoinTop() {
       <div className="flex gap-3 items-center">
         <FaFacebook className=" text-lg" />
         <FaInstagram className="text-white text-xl" />
+        <FaTwitter className="text-white text-lg" />
       </div>
     </div>
   );
