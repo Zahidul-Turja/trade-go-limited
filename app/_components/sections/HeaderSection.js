@@ -17,7 +17,7 @@ function HeaderSection() {
         <h1 className="text-xl font-extrabold md:text-[2rem]">
           Profession Clean Washing Chemicals
         </h1>
-        <p className="mb-2 text-justify text-xs tracking-wide md:text-sm">
+        <p className="my-1 mb-2 text-justify text-xs tracking-wide md:my-2 md:text-sm">
           We specialize in delivering high-quality cleaning chemicals tailored
           for commercial laundry operations.
         </p>

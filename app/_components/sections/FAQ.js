@@ -7,11 +7,11 @@ import { ChevronDown } from "lucide-react";
 function FAQ() {
   return (
     <section className="mx-auto w-full py-medium text-center lg:px-big">
-      <h1 className="mb-4 text-3xl font-extrabold uppercase tracking-wide text-primary-heading-main">
+      <h1 className="tranking-wide mb-2 text-xl font-extrabold uppercase text-primary-heading-main md:mb-4 md:text-3xl">
         Frequently Asked Questions (FAQs)
       </h1>
 
-      <div>
+      <div className="px-5 lg:px-0">
         {faqs.map((faq) => (
           <FAQCard
             key={faq.id}
@@ -34,9 +34,9 @@ const FAQCard = ({ id, question, answer }) => {
     <div className="mb-4 overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-500 hover:bg-slate-50">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between px-12 py-8 text-left"
+        className="flex w-full items-center justify-between px-6 py-4 text-left md:px-12 md:py-8"
       >
-        <h2 className="text-lg font-bold text-gray-900">
+        <h2 className="text-sm font-semibold text-gray-900 md:text-lg md:font-bold">
           {id}. {question}
         </h2>
         <ChevronDown
@@ -51,7 +51,7 @@ const FAQCard = ({ id, question, answer }) => {
           isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        <p className="px-12 pb-4 text-left text-sm font-light leading-7 text-gray-900">
+        <p className="px-6 pb-4 text-left text-sm font-light leading-7 text-gray-900 md:px-12">
           {answer}
         </p>
       </div>
