@@ -8,7 +8,7 @@ import Footer from "@/app/_components/sections/Footer";
 
 function HomePage() {
   return (
-    <main className="">
+    <main>
       <HeaderSection />
       <WhyUs />
       <Products />
