@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
 function NavigatoinTop() {
   return (
-    <div className="sticky flex w-screen items-center justify-between bg-primary px-5 py-2 text-white md:px-small lg:px-big">
+    <div className="sticky left-0 top-0 z-10 flex w-screen items-center justify-between bg-primary px-5 py-2 text-white md:px-small lg:px-big">
       <div className="flex items-center gap-1">
         <FaPhoneAlt className="text-xs" />
         <span className="tracking-wideest text-xs font-semibold">

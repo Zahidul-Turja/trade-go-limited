@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function HeaderSection() {
   return (
-    <header className="w-screen h-96  overflow-hidden">
-      <div className="w-screen h-96 relative flex items-center">
+    <header className="h-72 w-screen overflow-hidden md:h-96">
+      <div className="relative flex h-72 w-screen items-center md:h-96">
         <Image
           src={"/header.jpg"}
           alt={"header"}
@@ -11,20 +11,20 @@ function HeaderSection() {
           height={1000}
           className="object-center"
         />
-        <div className="bg-primary w-full h-full absolute top-0 left-0 opacity-50"></div>
+        <div className="absolute left-0 top-0 h-full w-full bg-primary opacity-50"></div>
       </div>
-      <div className="text-white  absolute top-[35%] right-0 -translate-y-1/2 px-big w-[58%]">
-        <h1 className="text-[2rem] font-extrabold">
+      <div className="absolute right-0 top-[22%] w-full -translate-y-1/2 px-5 text-white md:top-[35%] md:w-[70%] md:px-small lg:w-[58%] lg:px-big">
+        <h1 className="text-xl font-extrabold md:text-[2rem]">
           Profession Clean Washing Chemicals
         </h1>
-        <p className="text-justify text-sm tracking-wide mb-2">
+        <p className="mb-2 text-justify text-xs tracking-wide md:text-sm">
           We specialize in delivering high-quality cleaning chemicals tailored
           for commercial laundry operations.
         </p>
 
-        <button className="bg-white relative text-primary my-2 uppercase tracking-wide py-2 px-4 font-bold rounded-sm overflow-hidden group hover:text-white transition-colors duration-[500ms] ease-in-out">
+        <button className="group relative my-2 overflow-hidden rounded-sm bg-white px-2 py-1 text-xs font-bold uppercase tracking-wide text-primary transition-colors duration-[500ms] ease-in-out hover:text-white md:px-4 md:py-2 md:text-base">
           <span className="relative z-10">Products</span>
-          <span className="absolute top-0 left-0 w-[110%] h-[110%] bg-primary-heading-main -translate-x-full group-hover:translate-x-0 transition-transform duration-[500ms] ease-in-out"></span>
+          <span className="absolute left-0 top-0 h-[110%] w-[110%] -translate-x-full bg-primary-heading-main transition-transform duration-[500ms] ease-in-out group-hover:translate-x-0"></span>
         </button>
       </div>
     </header>

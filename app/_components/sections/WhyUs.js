@@ -5,16 +5,16 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 function WhyUs() {
   return (
-    <section className="w-full text-center py-medium lg:px-big mx-auto">
-      <h1 className="tranking-wide text-3xl uppercase font-extrabold text-primary-heading-main mb-4">
+    <section className="mx-auto w-full py-small text-center md:py-medium lg:px-big">
+      <h1 className="tranking-wide mb-2 text-xl font-extrabold uppercase text-primary-heading-main md:mb-4 md:text-3xl">
         Why Choose Us
       </h1>
-      <p className="w-[60%] mx-auto text-base text-gray-700">
+      <p className="mx-auto w-full text-sm text-gray-700 md:w-[60%] md:text-base">
         At TradeGO Limited, we understand the unique needs of commercial laundry
         operations and are committed to providing solutions that drive
         efficiency, quality, and satisfaction.
       </p>
-      <div className="grid w-full md:grid-cols-2  grid-cols-1 lg:grid-cols-4 gap-4 mt-8 mx-auto">
+      <div className="mx-auto mt-4 grid w-full grid-cols-1 gap-4 md:mt-8 md:grid-cols-2 lg:grid-cols-4">
         <WhyUsCard
           icon={<BsFillLightningChargeFill />}
           title="High Performance"
@@ -44,12 +44,16 @@ export default WhyUs;
 
 function WhyUsCard({ icon, title, description }) {
   return (
-    <div className=" text-center p-4">
-      <div className="text-3xl justify-center rounded-full bg-primary text-white w-16 h-16 mx-auto items-center flex">
+    <div className="p-2 text-center md:p-4">
+      <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary text-3xl text-white md:h-16 md:w-16">
         {icon}
       </div>
-      <h2 className="font-bold text-xl text-gray-800 mt-6 mb-3">{title}</h2>
-      <p className="text-gray-600 px-2 leading-7">{description}</p>
+      <h2 className="mb-2 mt-4 font-bold text-gray-800 md:mb-3 md:mt-6 md:text-xl">
+        {title}
+      </h2>
+      <p className="px-2 text-justify text-sm leading-6 text-gray-600 md:text-center md:text-base md:leading-7">
+        {description}
+      </p>
     </div>
   );
 }
