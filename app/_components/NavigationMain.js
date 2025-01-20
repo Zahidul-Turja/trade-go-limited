@@ -8,9 +8,9 @@ function NavigationMain() {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <nav className="w-screen bg-white text-gray-600 px-big py-2 flex items-center justify-between">
+    <nav className="flex w-screen items-center justify-between bg-white px-5 py-2 text-gray-600 md:px-small lg:px-big">
       <div className="flex items-center gap-2">
-        <div className="w-6 h-6 relative -translate-x-[0.12rem]">
+        <div className="relative h-6 w-6 -translate-x-[0.12rem]">
           <Image
             src={"/logo-large.png"}
             alt={"logo"}
@@ -19,15 +19,15 @@ function NavigationMain() {
             className="object-cover"
           />
         </div>
-        <h3 className="font-extrabold text-base text-primary-heading-main">
+        <h3 className="text-base font-extrabold text-primary-heading-main">
           TradeGo Limited
         </h3>
       </div>
 
-      <div className="flex items-center gap-12 text-xs  font-bold">
+      <div className="flex items-center gap-12 text-xs font-bold">
         <Link
           href="/"
-          className={`transition-all duration-300 ease-in-out px-1 border-b-2 hover:text-primary-heading-main ${
+          className={`border-b-2 px-1 transition-all duration-300 ease-in-out hover:text-primary-heading-main ${
             pathname === "/" && "border-primary text-primary-heading-main"
           }`}
         >

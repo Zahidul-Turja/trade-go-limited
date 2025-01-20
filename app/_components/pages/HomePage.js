@@ -1,7 +1,10 @@
 import HeaderSection from "@/app/_components/sections/HeaderSection";
-import WhyUs from "../sections/WhyUs";
-import Products from "../sections/Products";
-import Industries from "../sections/Industries";
+import WhyUs from "@/app/_components/sections/WhyUs";
+import Products from "@/app/_components/sections/Products";
+import Industries from "@/app/_components/sections/Industries";
+import Services from "@/app/_components/sections/Services";
+import FAQ from "@/app/_components/sections/FAQ";
+import Footer from "@/app/_components/sections/Footer";
 
 function HomePage() {
   return (
@@ -10,6 +13,9 @@ function HomePage() {
       <WhyUs />
       <Products />
       <Industries />
+      <Services />
+      <FAQ />
+      <Footer />
     </main>
   );
 }

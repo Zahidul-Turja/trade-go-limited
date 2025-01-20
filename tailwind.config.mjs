@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        "max-height": "max-height",
+      },
       colors: {
         primary: {
           DEFAULT: "#29ABE2",
