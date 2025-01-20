@@ -4,15 +4,31 @@ import Link from "next/link";
 function ProductCard({ image, title, description, image_reversed = false }) {
   return (
     <div
-      className={`my-0 flex w-full items-start justify-between px-small ${
-        image_reversed && "flex-row-reverse"
+      className={`my-0 flex flex-col items-start justify-between px-5 md:flex-row md:px-small ${
+        image_reversed && "md:flex-row-reverse"
       }`}
     >
-      <div className="w-[70%] text-left">
-        <Link href={"/"} className="mb-3 block text-2xl font-bold text-primary">
+      <div className="my-6 w-full text-left md:my-0 md:w-[50%] lg:w-[70%]">
+        <Link
+          href={"/"}
+          className="mb-3 block text-lg font-bold text-primary md:text-2xl"
+        >
           {title}
         </Link>
-        <p className="text-justify leading-7 text-gray-800">
+        <Link
+          href={"/"}
+          className="relative h-[25rem] w-[25rem] cursor-pointer overflow-hidden rounded-md md:hidden"
+        >
+          <Image
+            src={image}
+            alt={title}
+            width={390}
+            height={390}
+            loading="lazy"
+            className="overflow-hidden rounded-md object-cover"
+          />
+        </Link>
+        <p className="mt-4 text-justify text-sm leading-6 text-gray-800 md:m-0 md:text-base md:leading-7">
           {description}{" "}
           <Link
             href={"/"}
@@ -24,7 +40,7 @@ function ProductCard({ image, title, description, image_reversed = false }) {
       </div>
       <Link
         href={"/"}
-        className="relative h-[20rem] w-[18rem] cursor-pointer overflow-hidden rounded-md"
+        className="relative hidden h-[20rem] w-[18rem] cursor-pointer overflow-hidden rounded-md md:block"
       >
         <Image
           src={image}

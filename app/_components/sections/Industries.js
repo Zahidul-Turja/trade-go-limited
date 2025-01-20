@@ -5,11 +5,12 @@ import { IoMdBusiness } from "react-icons/io";
 
 function Industries() {
   return (
-    <section className="mx-auto w-full py-medium text-center lg:px-big">
-      <h1 className="mb-4 text-3xl font-extrabold uppercase tracking-wide text-primary-heading-main">
+    <section className="mx-auto w-full py-small text-center md:py-medium lg:px-big">
+      <h1 className="tranking-wide mb-2 text-xl font-extrabold uppercase text-primary-heading-main md:mb-4 md:text-3xl">
         Industries We Serve
       </h1>
-      <p className="mx-auto w-[60%] text-base text-gray-700">
+      <p className="mx-auto w-full px-5 text-sm text-gray-700 md:w-[60%] md:px-0 md:text-base">
+        {" "}
         At TradeGO Limited, we cater to a wide range of industries, providing
         specialized cleaning solutions to meet the distinct needs of each
         sector. Our expertise ensures that you achieve exceptional results,
@@ -45,12 +46,16 @@ export default Industries;
 
 function IndustryCard({ icon, title, description }) {
   return (
-    <div className="p-4 text-center">
-      <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl text-white">
+    <div className="p-2 text-center md:p-4">
+      <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary text-3xl text-white md:h-16 md:w-16">
         {icon}
       </div>
-      <h2 className="mb-3 mt-6 text-xl font-bold text-gray-800">{title}</h2>
-      <p className="px-2 text-sm leading-7 text-gray-600">{description}</p>
+      <h2 className="mb-2 mt-4 font-bold text-gray-800 md:mb-3 md:mt-6 md:text-xl">
+        {title}
+      </h2>
+      <p className="px-2 text-justify text-sm leading-6 text-gray-600 md:text-center md:text-base md:leading-7">
+        {description}
+      </p>
     </div>
   );
 }

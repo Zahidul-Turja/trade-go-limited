@@ -9,7 +9,7 @@ function WhyUs() {
       <h1 className="tranking-wide mb-2 text-xl font-extrabold uppercase text-primary-heading-main md:mb-4 md:text-3xl">
         Why Choose Us
       </h1>
-      <p className="mx-auto w-full text-sm text-gray-700 md:w-[60%] md:text-base">
+      <p className="mx-auto w-full px-5 text-sm text-gray-700 md:w-[60%] md:px-0 md:text-base">
         At TradeGO Limited, we understand the unique needs of commercial laundry
         operations and are committed to providing solutions that drive
         efficiency, quality, and satisfaction.

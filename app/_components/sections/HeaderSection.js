@@ -22,7 +22,7 @@ function HeaderSection() {
           for commercial laundry operations.
         </p>
 
-        <button className="group relative my-2 overflow-hidden rounded-sm bg-white px-2 py-1 text-xs font-bold uppercase tracking-wide text-primary transition-colors duration-[500ms] ease-in-out hover:text-white md:px-4 md:py-2 md:text-base">
+        <button className="group relative my-2 overflow-hidden rounded-sm bg-white px-4 py-2 text-xs font-bold uppercase tracking-wide text-primary transition-colors duration-[500ms] ease-in-out hover:text-white md:px-4 md:py-2 md:text-base">
           <span className="relative z-10">Products</span>
           <span className="absolute left-0 top-0 h-[110%] w-[110%] -translate-x-full bg-primary-heading-main transition-transform duration-[500ms] ease-in-out group-hover:translate-x-0"></span>
         </button>
