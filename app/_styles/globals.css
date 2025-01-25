@@ -1,7 +1,14 @@
+@import "locomotive-scroll/dist/locomotive-scroll.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  scroll-behavior: smooth;
+[data-scroll-container] {
+  overflow: hidden; /* Prevent default scrolling */
 }
+
+[data-scroll] {
+  will-change: transform;
+}
+
+/* Add any additional custom styles below */

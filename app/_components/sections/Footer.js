@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import toast from "react-hot-toast";
 
 function Footer() {
   return (
@@ -67,23 +70,30 @@ function ContactColumn() {
         Get in touch
       </h2>
       <div className="mt-6 flex flex-col gap-4 text-base tracking-wider text-white md:text-left">
-        <p className="">
-          <span className="font-semibold">Phone: </span> +0044 07515106586
+        <p
+          className="cursor-pointer"
+          onClick={() => {
+            navigator.clipboard.writeText("+0044 07515106586");
+            toast.success("Phone number copied to clipboard");
+          }}
+        >
+          +0044 07515106586
         </p>
-        <p className="">
-          <span className="font-semibold">Email: </span>{" "}
+        <p
+          className="cursor-pointer"
+          onClick={() => {
+            navigator.clipboard.writeText("info@tradegolimited.co.uk");
+            toast.success("Email copied to clipboard");
+          }}
+        >
           info@tradegolimited.co.uk
         </p>
-        <p className="">
-          <span className="font-semibold">Address: </span> 135 Tiptree Crescent,
-          Ilford IG5 0SX, United Kingdom
-        </p>
+        <p className="">135 Tiptree Crescent, Ilford IG5 0SX, United Kingdom</p>
         <Link
           href="#"
           target="_blank"
           className="hover:text-primary-heading-second"
         >
-          <span className="font-semibold">Website: </span>{" "}
           <span>www.tradegolimited.co.uk</span>
         </Link>
       </div>

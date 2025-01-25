@@ -5,6 +5,9 @@ import { raleway, poppins } from "@/app/_styles/fonts";
 
 import NavigationTop from "./_components/NavigationTop";
 import NavigationMain from "./_components/NavigationMain";
+import Footer from "./_components/sections/Footer";
+
+import LocoScrollProvider from "./_components/LocoScrollProvider";
 
 export const metadata = {
   title: {
@@ -18,12 +21,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`overflow-x-hidden ${raleway.className} antialiased`}>
+      <body
+        data-scroll-container
+        className={`overflow-x-hidden ${raleway.className} antialiased`}
+      >
         <NavigationTop />
         <NavigationMain />
-        {children}
+        <LocoScrollProvider>{children}</LocoScrollProvider>
+        {/* {children} */}
+        <Footer />
 
-        <Toaster position="bottom-left" toastOptions={{ duration: 3000 }} />
+        <Toaster position="bottom-center" toastOptions={{ duration: 3000 }} />
       </body>
     </html>
   );
