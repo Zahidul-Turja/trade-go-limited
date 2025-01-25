@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { products as p } from "@/app/_data/products";
-
 function PageHeader({ image_url, title, page, product_id, product_name }) {
   return (
     <header className="relative flex h-44 w-screen items-center overflow-hidden md:h-52">

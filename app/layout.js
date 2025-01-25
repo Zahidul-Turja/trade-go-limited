@@ -21,14 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        data-scroll-container
-        className={`overflow-x-hidden ${raleway.className} antialiased`}
-      >
+      <body className={`overflow-x-hidden ${raleway.className} antialiased`}>
         <NavigationTop />
         <NavigationMain />
-        <LocoScrollProvider>{children}</LocoScrollProvider>
-        {/* {children} */}
+        {/* <LocoScrollProvider>{children}</LocoScrollProvider> */}
+        {children}
         <Footer />
 
         <Toaster position="bottom-center" toastOptions={{ duration: 3000 }} />
