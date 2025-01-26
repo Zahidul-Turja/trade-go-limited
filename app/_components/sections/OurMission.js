@@ -22,7 +22,7 @@ function OurMission() {
             className="relative z-10 object-cover"
           />
 
-          <div className="left-5 top-5 z-0 hidden h-full w-full bg-white md:absolute"></div>
+          <div className="absolute left-5 top-5 z-0 hidden h-full w-full bg-white md:block"></div>
         </div>
 
         <div className="mt-8 text-left md:mt-0 md:w-[55%]">

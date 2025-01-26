@@ -1,22 +1,62 @@
 "use client";
 
+import Image from "next/image";
 import { useParams } from "next/navigation";
 
 import { products } from "@/app/_data/products";
 import PageHeader from "../PageHeader";
+import KeyFeatures from "../sections/KeyFeatures";
+import KeyUsages from "../sections/KeyUsages";
+import Safety from "../sections/Safety";
 
 function ProductDetailsPage() {
   const params = useParams();
   const product = products[params.id - 1];
+
   return (
     <>
       <PageHeader
         image_url={"/clothes.jpg"}
-        title={product.title}
+        title={"Product Details"}
         page={"products"}
         product_id={product.id}
         product_name={product.title}
       />
+
+      <section className="mx-auto w-full px-5 py-small text-center md:py-medium lg:px-big">
+        <div className="flex flex-col justify-between md:flex-row">
+          <div className="text-justify md:w-[65%]">
+            <h1 className="text-3xl font-extrabold uppercase text-primary-heading-main">
+              {product.title}
+            </h1>
+            {product.description.map((paragraph, index) => (
+              <p key={index} className="my-4 leading-7">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+
+          <div className="relative overflow-hidden md:h-96 md:w-[30%]">
+            <Image
+              src={product.image}
+              alt={product.title}
+              width={500}
+              height={500}
+              loading="lazy"
+              className="object-center"
+            />
+          </div>
+        </div>
+      </section>
+
+      {product.keys && <KeyFeatures features={product.keys} />}
+      {product.applications && product.usages && (
+        <KeyUsages
+          applications={product.applications}
+          usages={product.usages}
+        />
+      )}
+      {product.safety && <Safety safety={product.safety} />}
     </>
   );
 }

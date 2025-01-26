@@ -1,11 +1,11 @@
 import { Toaster } from "react-hot-toast";
 
-import "@/app/_styles/globals.css";
-import { raleway, poppins } from "@/app/_styles/fonts";
-
+import { raleway } from "@/app/_styles/fonts";
 import NavigationTop from "./_components/NavigationTop";
 import NavigationMain from "./_components/NavigationMain";
 import Footer from "./_components/sections/Footer";
+
+import "@/app/_styles/globals.css";
 
 export const metadata = {
   title: {
