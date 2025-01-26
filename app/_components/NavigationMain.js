@@ -24,7 +24,7 @@ function NavigationMain() {
   };
 
   return (
-    <nav className="sticky top-0 z-10 flex w-full items-center justify-between bg-white px-4 py-3 text-gray-600 shadow-md md:px-small lg:px-big">
+    <nav className="sticky top-0 z-30 flex w-screen items-center justify-between bg-white px-4 py-3 text-gray-600 shadow-md md:px-small lg:px-big">
       <Link href={"/"} className="flex items-center gap-2">
         <div className="relative h-6 w-6 -translate-x-[0.12rem]">
           <Image

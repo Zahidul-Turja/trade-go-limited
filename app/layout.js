@@ -7,8 +7,6 @@ import NavigationTop from "./_components/NavigationTop";
 import NavigationMain from "./_components/NavigationMain";
 import Footer from "./_components/sections/Footer";
 
-import LocoScrollProvider from "./_components/LocoScrollProvider";
-
 export const metadata = {
   title: {
     template: "%s | Trade Go",
@@ -24,7 +22,6 @@ export default function RootLayout({ children }) {
       <body className={`overflow-x-hidden ${raleway.className} antialiased`}>
         <NavigationTop />
         <NavigationMain />
-        {/* <LocoScrollProvider>{children}</LocoScrollProvider> */}
         {children}
         <Footer />
 

@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer
       id="footer"
-      className="mx-auto w-full bg-primary-footer px-5 py-10 text-center md:px-medium md:py-medium lg:px-big"
+      className="mx-auto w-screen bg-primary-footer px-5 py-10 text-center md:px-medium md:py-medium lg:px-big"
     >
       <div className="flex flex-col gap-8 md:flex-row md:justify-between">
         <NavigationColumn />

@@ -3,16 +3,16 @@ import Link from "next/link";
 
 function PageHeader({ image_url, title, page, product_id, product_name }) {
   return (
-    <header className="relative flex h-44 w-screen items-center overflow-hidden md:h-52">
+    <header className="relative flex h-32 w-screen items-center overflow-hidden md:h-52">
       <Image
         src={image_url ? image_url : "/header.jpg"}
         alt={title}
         width={2000}
         height={1000}
-        className="object-center"
+        className="overflow-hidden object-center"
       />
       <div className="absolute left-0 top-0 h-full w-full bg-primary opacity-50"></div>
-      <div className="absolute left-28 top-1/2 -translate-y-1/2 text-white">
+      <div className="absolute left-5 top-1/2 -translate-y-1/2 text-white md:left-28">
         <h1 className="text-xl font-extrabold uppercase md:text-4xl">
           {title}
         </h1>
