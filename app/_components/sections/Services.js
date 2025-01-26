@@ -5,7 +5,10 @@ import { IoMdBusiness } from "react-icons/io";
 
 function Services() {
   return (
-    <section className="mx-auto w-full bg-primary py-small text-center text-white md:py-medium lg:px-big">
+    <section
+      id="services"
+      className="mx-auto w-full bg-primary py-small text-center text-white md:py-medium lg:px-big"
+    >
       <h1 className="tranking-wide mb-2 text-xl font-extrabold uppercase text-white md:mb-4 md:text-3xl">
         Our Services
       </h1>

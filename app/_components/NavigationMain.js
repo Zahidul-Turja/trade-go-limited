@@ -25,7 +25,7 @@ function NavigationMain() {
 
   return (
     <nav className="sticky top-0 z-10 flex w-full items-center justify-between bg-white px-4 py-3 text-gray-600 shadow-md md:px-small lg:px-big">
-      <div className="flex items-center gap-2">
+      <Link href={"/"} className="flex items-center gap-2">
         <div className="relative h-6 w-6 -translate-x-[0.12rem]">
           <Image
             src="/logo-large.png"
@@ -38,7 +38,7 @@ function NavigationMain() {
         <h3 className="text-base font-extrabold text-primary-heading-main">
           TradeGo Limited
         </h3>
-      </div>
+      </Link>
 
       {/* Mobile Menu Button */}
       <button

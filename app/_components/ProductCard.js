@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function ProductCard({ image, title, description, image_reversed = false }) {
+function ProductCard({
+  id,
+  image,
+  title,
+  description,
+  image_reversed = false,
+}) {
   return (
     <div
       className={`my-0 flex flex-col items-start justify-between px-5 md:flex-row md:px-small ${
@@ -10,13 +16,13 @@ function ProductCard({ image, title, description, image_reversed = false }) {
     >
       <div className="my-6 w-full text-left md:my-0 md:w-[50%] lg:w-[70%]">
         <Link
-          href={"/"}
+          href={`/products/${id}`}
           className="mb-3 block text-lg font-bold text-primary md:text-2xl"
         >
           {title}
         </Link>
         <Link
-          href={"/"}
+          href={`/products/${id}`}
           className="relative h-[25rem] w-[25rem] cursor-pointer overflow-hidden rounded-md md:hidden"
         >
           <Image
@@ -25,13 +31,13 @@ function ProductCard({ image, title, description, image_reversed = false }) {
             width={390}
             height={390}
             loading="lazy"
-            className="overflow-hidden rounded-md object-cover"
+            className="rounded-md object-cover"
           />
         </Link>
         <p className="mt-4 text-justify text-sm leading-6 text-gray-800 md:m-0 md:text-base md:leading-7">
           {description}{" "}
           <Link
-            href={"/"}
+            href={`/products/${id}`}
             className="cursor-pointer border-b-2 border-primary-footer p-0.5 text-sm font-semibold text-primary-footer"
           >
             See more.
@@ -39,7 +45,7 @@ function ProductCard({ image, title, description, image_reversed = false }) {
         </p>
       </div>
       <Link
-        href={"/"}
+        href={`/products/${id}`}
         className="relative hidden h-[20rem] w-[18rem] cursor-pointer overflow-hidden rounded-md md:block"
       >
         <Image

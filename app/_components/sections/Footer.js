@@ -5,7 +5,10 @@ import toast from "react-hot-toast";
 
 function Footer() {
   return (
-    <footer className="mx-auto w-full bg-primary-footer px-5 py-10 text-center md:px-medium md:py-medium lg:px-big">
+    <footer
+      id="footer"
+      className="mx-auto w-full bg-primary-footer px-5 py-10 text-center md:px-medium md:py-medium lg:px-big"
+    >
       <div className="flex flex-col gap-8 md:flex-row md:justify-between">
         <NavigationColumn />
         <ServicesColumn />
@@ -30,18 +33,21 @@ function NavigationColumn() {
         Navigation
       </h2>
       <div className="mt-6 flex flex-col gap-4 text-center text-base font-medium tracking-wider text-white md:text-left">
-        <Link href={"/"} className="hover:text-primary-heading-second">
+        <Link href={"/about"} className="hover:text-primary-heading-second">
           About Us
         </Link>
-        <Link href={"/"} className="hover:text-primary-heading-second">
+        <Link href={"/products"} className="hover:text-primary-heading-second">
           Products
         </Link>
-        <a href="#" className="hover:text-primary-heading-second">
+        <Link
+          href={"/#industries"}
+          className="hover:text-primary-heading-second"
+        >
           Industries we serve
-        </a>
-        <a href="#" className="hover:text-primary-heading-second">
+        </Link>
+        <Link href={"/#faqs"} className="hover:text-primary-heading-second">
           FAQs
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -90,7 +96,7 @@ function ContactColumn() {
         </p>
         <p className="">135 Tiptree Crescent, Ilford IG5 0SX, United Kingdom</p>
         <Link
-          href="#"
+          href={"https://www.tradegolimited.co.uk"}
           target="_blank"
           className="hover:text-primary-heading-second"
         >

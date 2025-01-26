@@ -1,8 +1,13 @@
+"use client";
+
 import ProductCard from "@/app/_components/ProductCard";
 
 import { products } from "@/app/_data/products";
+import { useRouter } from "next/navigation";
 
 function Products({ all_products = false, class_name = "" }) {
+  const router = useRouter();
+
   let num_of_items = 4;
   if (all_products) num_of_items = products.length;
   return (
@@ -15,6 +20,7 @@ function Products({ all_products = false, class_name = "" }) {
       {products.slice(0, num_of_items).map((product) => (
         <ProductCard
           key={product.id}
+          id={product.id}
           title={product.title}
           description={product.description}
           image={product.image}
@@ -23,7 +29,10 @@ function Products({ all_products = false, class_name = "" }) {
       ))}
 
       {!all_products && (
-        <button className="group relative overflow-hidden rounded-sm bg-primary px-4 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-[500ms] ease-in-out hover:text-white md:my-2 md:text-base">
+        <button
+          onClick={() => router.push("/products")}
+          className="group relative overflow-hidden rounded-sm bg-primary px-4 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-[500ms] ease-in-out hover:text-white md:my-2 md:text-base"
+        >
           <span className="relative z-10">All Products</span>
           <span className="absolute left-0 top-0 h-[110%] w-[110%] -translate-x-full bg-primary-heading-main transition-transform duration-[500ms] ease-in-out group-hover:translate-x-0"></span>
         </button>

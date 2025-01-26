@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function HeaderSection() {
+  const router = useRouter();
+
   return (
     <header className="relative h-72 w-screen overflow-hidden md:h-96">
       <div className="relative flex h-72 w-screen items-center md:h-96">
@@ -22,7 +27,10 @@ function HeaderSection() {
           for commercial laundry operations.
         </p>
 
-        <button className="group relative my-2 overflow-hidden rounded-sm bg-white px-4 py-2 text-xs font-bold uppercase tracking-wide text-primary transition-colors duration-[500ms] ease-in-out hover:text-white md:px-4 md:py-2 md:text-base">
+        <button
+          onClick={() => router.push("/products")}
+          className="group relative my-2 overflow-hidden rounded-sm bg-white px-4 py-2 text-xs font-bold uppercase tracking-wide text-primary transition-colors duration-[500ms] ease-in-out hover:text-white md:px-4 md:py-2 md:text-base"
+        >
           <span className="relative z-10">Products</span>
           <span className="absolute left-0 top-0 h-[110%] w-[110%] -translate-x-full bg-primary-heading-main transition-transform duration-[500ms] ease-in-out group-hover:translate-x-0"></span>
         </button>

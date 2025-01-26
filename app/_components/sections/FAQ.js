@@ -6,7 +6,10 @@ import { ChevronDown } from "lucide-react";
 
 function FAQ() {
   return (
-    <section className="mx-auto w-full py-medium text-center lg:px-big">
+    <section
+      id="faqs"
+      className="mx-auto w-full py-medium text-center lg:px-big"
+    >
       <h1 className="tranking-wide mb-2 text-xl font-extrabold uppercase text-primary-heading-main md:mb-4 md:text-3xl">
         Frequently Asked Questions (FAQs)
       </h1>
