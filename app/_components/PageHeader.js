@@ -19,7 +19,7 @@ function PageHeader({ image_url, title, page, product_id, product_name }) {
         <div>
           <Link href={"/"}>Home/</Link>
           {page == "about" ? (
-            <Link href={"/about"}>About/</Link>
+            <Link href={"/about"}>About</Link>
           ) : (
             <Link href={"/products"}>Products</Link>
           )}
