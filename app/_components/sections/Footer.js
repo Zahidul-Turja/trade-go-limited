@@ -32,7 +32,7 @@ function NavigationColumn() {
       <h2 className="text-xl font-extrabold uppercase tracking-wider text-primary-heading-second">
         Navigation
       </h2>
-      <div className="mt-6 flex flex-col gap-4 text-center text-base font-thin tracking-wider text-white md:text-left">
+      <div className="mt-6 flex flex-col gap-4 text-center text-base tracking-wider text-white md:text-left">
         <Link href={"/about"} className="hover:text-primary-heading-second">
           About Us
         </Link>
