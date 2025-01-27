@@ -35,7 +35,11 @@ function ProductCard({
           />
         </Link>
         <p className="mt-4 text-justify text-sm leading-6 text-gray-800 md:m-0 md:text-base md:leading-7">
-          {description}{" "}
+          {description.map((paragraph, index) => (
+            <p key={index} className={`my-2 ${index === 1 && "truncate"}`}>
+              {paragraph}
+            </p>
+          ))}
           <Link
             href={`/products/${id}`}
             className="cursor-pointer border-b-2 border-primary-footer p-0.5 text-sm font-semibold text-primary-footer"

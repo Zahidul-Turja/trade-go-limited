@@ -14,7 +14,7 @@ function Footer() {
         <ServicesColumn />
         <ContactColumn />
       </div>
-      <div className="mt-7 h-2 w-full border-t border-white pt-4 text-white">
+      <div className="mt-7 h-2 w-full border-t border-white pt-4 font-extralight text-white">
         <span className="text-xs font-bold uppercase tracking-widest">
           TradeGo Limited{" "}
         </span>{" "}
@@ -32,7 +32,7 @@ function NavigationColumn() {
       <h2 className="text-xl font-extrabold uppercase tracking-wider text-primary-heading-second">
         Navigation
       </h2>
-      <div className="mt-6 flex flex-col gap-4 text-center text-base font-medium tracking-wider text-white md:text-left">
+      <div className="mt-6 flex flex-col gap-4 text-center text-base font-thin tracking-wider text-white md:text-left">
         <Link href={"/about"} className="hover:text-primary-heading-second">
           About Us
         </Link>
@@ -59,7 +59,7 @@ function ServicesColumn() {
       <h2 className="text-xl font-extrabold uppercase tracking-wider text-primary-heading-second">
         Services
       </h2>
-      <div className="mt-6 flex flex-col gap-4 text-base font-medium tracking-wider text-white md:text-left">
+      <div className="mt-6 flex flex-col gap-4 text-base font-thin tracking-wider text-white md:text-left">
         <p>Technical Support</p>
         <p>Custom Solutions</p>
         <p>Training Staff</p>
@@ -75,7 +75,7 @@ function ContactColumn() {
       <h2 className="text-xl font-extrabold uppercase tracking-wider text-primary-heading-second">
         Get in touch
       </h2>
-      <div className="mt-6 flex flex-col gap-4 text-base tracking-wider text-white md:text-left">
+      <div className="mt-6 flex flex-col gap-4 text-base font-thin tracking-wider text-white md:text-left">
         <p
           className="cursor-pointer"
           onClick={() => {

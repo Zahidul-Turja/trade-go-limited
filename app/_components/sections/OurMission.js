@@ -12,17 +12,17 @@ function OurMission() {
       </p>
 
       <div className="mt-6 flex flex-col justify-between md:mt-12 md:flex-row">
-        <div className="relative md:h-[21.75rem] md:w-[40%]">
+        <div className="relative rounded-md md:h-[21.75rem] md:w-[40%]">
           <Image
             src="/about/about-4.jpg"
             alt="mission"
             width={2000}
             height={1000}
             loading="lazy"
-            className="relative z-10 object-cover"
+            className="relative z-10 rounded-lg object-cover"
           />
 
-          <div className="absolute left-5 top-5 z-0 hidden h-full w-full bg-white md:block"></div>
+          <div className="absolute left-5 top-5 z-0 hidden h-full w-full rounded-lg bg-white md:block"></div>
         </div>
 
         <div className="mt-8 text-left md:mt-0 md:w-[55%]">

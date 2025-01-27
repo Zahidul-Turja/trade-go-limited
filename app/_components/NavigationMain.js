@@ -14,8 +14,8 @@ function NavigationMain() {
     { href: "/", text: "Home" },
     { href: "/about", text: "About" },
     { href: "/products", text: "Products" },
-    { href: "#services", text: "Services" },
-    { href: "#faqs", text: "FAQs" },
+    { href: "/#services", text: "Services" },
+    { href: "/#faqs", text: "FAQs" },
     { href: "#footer", text: "Contact" },
   ];
 
