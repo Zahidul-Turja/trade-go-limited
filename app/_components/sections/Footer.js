@@ -14,7 +14,7 @@ function Footer() {
         <ServicesColumn />
         <ContactColumn />
       </div>
-      <div className="mt-7 h-2 w-full border-t border-white pt-4 font-extralight text-white">
+      <div className="mt-7 h-2 w-full border-t border-white pt-4 text-xs font-extralight text-white md:text-base">
         <span className="text-xs font-bold uppercase tracking-widest">
           TradeGo Limited{" "}
         </span>{" "}
@@ -29,10 +29,10 @@ export default Footer;
 function NavigationColumn() {
   return (
     <div className="text-center md:text-left">
-      <h2 className="text-xl font-extrabold uppercase tracking-wider text-primary-heading-second">
+      <h2 className="font-extrabold uppercase tracking-wider text-primary-heading-second md:text-xl">
         Navigation
       </h2>
-      <div className="mt-6 flex flex-col gap-4 text-center text-base tracking-wider text-white md:text-left">
+      <div className="mt-3 flex flex-col gap-2 text-center text-sm tracking-wider text-white md:mt-6 md:gap-4 md:text-left md:text-base">
         <Link href={"/about"} className="hover:text-primary-heading-second">
           About Us
         </Link>
@@ -56,10 +56,10 @@ function NavigationColumn() {
 function ServicesColumn() {
   return (
     <div className="md:text-left">
-      <h2 className="text-xl font-extrabold uppercase tracking-wider text-primary-heading-second">
+      <h2 className="font-extrabold uppercase tracking-wider text-primary-heading-second md:text-xl">
         Services
       </h2>
-      <div className="mt-6 flex flex-col gap-4 text-base font-thin tracking-wider text-white md:text-left">
+      <div className="mt-3 flex flex-col gap-2 text-center text-sm tracking-wider text-white md:mt-6 md:gap-4 md:text-left md:text-base">
         <p>Technical Support</p>
         <p>Custom Solutions</p>
         <p>Training Staff</p>
@@ -72,10 +72,10 @@ function ServicesColumn() {
 function ContactColumn() {
   return (
     <div className="md:text-left">
-      <h2 className="text-xl font-extrabold uppercase tracking-wider text-primary-heading-second">
+      <h2 className="font-extrabold uppercase tracking-wider text-primary-heading-second md:text-xl">
         Get in touch
       </h2>
-      <div className="mt-6 flex flex-col gap-4 text-base font-thin tracking-wider text-white md:text-left">
+      <div className="mt-3 flex flex-col gap-2 text-center text-sm tracking-wider text-white md:mt-6 md:gap-4 md:text-left md:text-base">
         <p
           className="cursor-pointer"
           onClick={() => {

@@ -5,7 +5,7 @@ function PageHeader({ image_url, title, page, product_id, product_name }) {
   return (
     <header className="relative flex h-32 w-screen items-center overflow-hidden md:h-52">
       <Image
-        src={image_url ? image_url : "/header.jpg"}
+        src={image_url ? image_url : "/clothes-3.jpg"}
         alt={title}
         width={2000}
         height={1000}
@@ -16,7 +16,7 @@ function PageHeader({ image_url, title, page, product_id, product_name }) {
         <h1 className="text-xl font-extrabold uppercase md:text-4xl">
           {title}
         </h1>
-        <div>
+        <div className="text-xs md:text-base">
           <Link href={"/"}>Home/</Link>
           {page == "about" ? (
             <Link href={"/about"}>About</Link>

@@ -5,7 +5,10 @@ function ProductsPage() {
   return (
     <>
       <PageHeader title={"Our Products"} page={"products"} />
-      <Products all_products={true} class_name="md:pt-16 pb-6 py-10 md:pb-10" />
+      <Products
+        all_products={true}
+        class_name="md:pt-16 pb-6 md:py-10 md:pb-10"
+      />
     </>
   );
 }

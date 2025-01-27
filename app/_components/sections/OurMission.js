@@ -19,7 +19,7 @@ function OurMission() {
             width={1000}
             height={500}
             loading="lazy"
-            className="relative z-10 rounded-lg object-cover"
+            className="relative z-10 object-cover md:rounded-lg"
           />
 
           <div className="absolute left-3 top-2 z-0 hidden h-full w-full rounded-lg bg-white md:block lg:left-5 lg:top-5"></div>

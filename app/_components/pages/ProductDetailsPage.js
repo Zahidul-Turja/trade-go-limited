@@ -23,7 +23,7 @@ function ProductDetailsPage() {
         product_name={product.title}
       />
 
-      <section className="mx-auto w-full px-5 py-small text-center md:py-medium lg:px-big">
+      <section className="mx-auto w-full px-5 py-6 text-center md:py-medium lg:px-big">
         <div className="flex flex-col justify-between md:flex-row">
           <div className="text-justify md:w-[65%]">
             <h1 className="text-xlmd:text-3xl font-extrabold uppercase text-primary-heading-main">
