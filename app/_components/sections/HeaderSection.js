@@ -18,7 +18,7 @@ function HeaderSection() {
         />
         <div className="absolute left-0 top-0 h-full w-full bg-primary opacity-50"></div>
       </div>
-      <div className="absolute right-0 top-[22%] w-full -translate-y-1/2 px-5 text-white md:top-[37%] md:w-[70%] md:px-small lg:w-[58%] lg:px-big">
+      <div className="absolute right-0 top-[24%] w-full -translate-y-1/2 px-5 text-white md:top-[37%] md:w-[70%] md:px-small lg:w-[58%] lg:px-big">
         <h1 className="text-xl font-extrabold md:text-[2rem]">
           Profession Clean Washing Chemicals
         </h1>
