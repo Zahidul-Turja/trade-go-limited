@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 import { products } from "@/app/_data/products";
 import PageHeader from "../PageHeader";
 import KeyFeatures from "../sections/KeyFeatures";
-import KeyUsages from "../sections/KeyUsages";
+import ApplicationsAndUsage from "../sections/ApplicationsAndUsages";
 import Safety from "../sections/Safety";
 
 function ProductDetailsPage() {
@@ -51,7 +51,7 @@ function ProductDetailsPage() {
 
       {product.keys && <KeyFeatures features={product.keys} />}
       {product.applications && product.usages && (
-        <KeyUsages
+        <ApplicationsAndUsage
           applications={product.applications}
           usages={product.usages}
         />
