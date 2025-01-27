@@ -7,7 +7,7 @@ function Industries() {
   return (
     <section
       id="industries"
-      className="mx-auto w-full py-small text-center md:py-medium lg:px-big"
+      className="mx-auto w-full py-medium text-center md:py-medium lg:px-big"
     >
       <h1 className="tranking-wide mb-2 text-xl font-extrabold uppercase text-primary-heading-main md:mb-4 md:text-3xl">
         Industries We Serve
