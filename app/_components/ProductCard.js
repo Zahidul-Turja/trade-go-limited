@@ -1,5 +1,13 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function ProductCard({
   id,
@@ -8,11 +16,37 @@ function ProductCard({
   description,
   image_reversed = false,
 }) {
+  const component = useRef(null);
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.fromTo(
+        component.current,
+        { opacity: 0, y: 60 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: 0.5,
+          ease: "power2.in",
+          scrollTrigger: {
+            trigger: component.current,
+            start: "top bottom",
+            end: "bottom 60%",
+            toggleActions: "play none none none",
+          },
+        },
+      );
+
+      return () => ctx.revert(); // Cleanup
+    }, component);
+  }, []);
+
   return (
     <div
       className={`my-0 flex flex-col items-start justify-between px-5 md:flex-row md:px-small ${
         image_reversed && "md:flex-row-reverse"
       }`}
+      ref={component}
     >
       <div className="my-6 w-full text-left md:my-0 md:w-[50%] lg:w-[70%]">
         <Link

@@ -84,7 +84,7 @@ function ContactColumn() {
               toast.success("Phone number copied to clipboard");
             }}
           >
-            +0044 07515106586
+            +44 07515106586
           </span>
           <span className="mx-1.5">or</span>
           <span
@@ -94,7 +94,7 @@ function ContactColumn() {
               toast.success("Phone number copied to clipboard");
             }}
           >
-            +0044 02033766160
+            +44 02033766160
           </span>
         </p>
         <p

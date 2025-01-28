@@ -15,7 +15,7 @@ function NavigatoinTop() {
             toast.success("Phone number copied to clipboard");
           }}
         >
-          +0044 07515106586
+          +44 07515106586
         </span>
         <span className="mr-1 text-xs">or</span>
         <span
@@ -25,7 +25,7 @@ function NavigatoinTop() {
             toast.success("Phone number copied to clipboard");
           }}
         >
-          +0044 02033766160
+          +44 02033766160
         </span>
       </div>
 
