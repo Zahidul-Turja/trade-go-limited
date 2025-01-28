@@ -54,7 +54,7 @@ function NavigationMain() {
       </button>
 
       {/* Desktop Navigation */}
-      <div className="hidden items-center gap-8 text-xs font-bold md:flex">
+      <div className="hidden items-center gap-8 text-xs font-medium uppercase md:flex">
         {navLinks.map((link) => (
           <Link
             key={link.href}

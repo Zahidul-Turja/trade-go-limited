@@ -26,7 +26,7 @@ function ProductDetailsPage() {
       <section className="mx-auto w-full px-5 py-6 text-center md:py-medium lg:px-big">
         <div className="flex flex-col justify-between md:flex-row">
           <div className="text-justify md:w-[65%]">
-            <h1 className="text-xlmd:text-3xl font-extrabold uppercase text-primary-heading-main">
+            <h1 className="text-xl md:text-3xl font-extrabold uppercase text-primary-heading-main">
               {product.title}
             </h1>
             {product.description.map((paragraph, index) => (
