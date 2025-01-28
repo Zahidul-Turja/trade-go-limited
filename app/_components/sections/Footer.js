@@ -7,14 +7,14 @@ function Footer() {
   return (
     <footer
       id="footer"
-      className="mx-auto w-screen bg-primary-footer px-5 py-10 text-center md:px-medium md:py-medium lg:px-big"
+      className="mx-auto w-screen bg-primary-footer px-5 py-10 text-center md:px-medium md:py-small lg:px-big"
     >
       <div className="flex flex-col gap-8 md:flex-row md:justify-between">
         <NavigationColumn />
         <ServicesColumn />
         <ContactColumn />
       </div>
-      <div className="mt-7 h-2 w-full border-t border-white pt-4 text-xs font-extralight text-white md:text-base">
+      <div className="mt-7 h-2 w-full border-t border-white pt-4 text-xs font-extralight text-white md:text-xs">
         <span className="text-xs font-bold uppercase tracking-widest">
           TradeGo Limited{" "}
         </span>{" "}
@@ -32,7 +32,7 @@ function NavigationColumn() {
       <h2 className="font-extrabold uppercase tracking-wider text-primary-heading-second md:text-xl">
         Navigation
       </h2>
-      <div className="mt-3 flex flex-col gap-2 text-center text-sm tracking-wider text-white md:mt-6 md:gap-4 md:text-left md:text-base">
+      <div className="mt-2 flex flex-col gap-2 text-center text-xs tracking-wider text-white md:mt-4 md:gap-3 md:text-left md:text-sm">
         <Link href={"/about"} className="hover:text-primary-heading-second">
           About Us
         </Link>
@@ -59,7 +59,7 @@ function ServicesColumn() {
       <h2 className="font-extrabold uppercase tracking-wider text-primary-heading-second md:text-xl">
         Services
       </h2>
-      <div className="mt-3 flex flex-col gap-2 text-center text-sm tracking-wider text-white md:mt-6 md:gap-4 md:text-left md:text-base">
+      <div className="mt-2 flex flex-col gap-2 text-center text-xs tracking-wider text-white md:mt-4 md:gap-3 md:text-left md:text-sm">
         <p>Technical Support</p>
         <p>Custom Solutions</p>
         <p>Training Staff</p>
@@ -75,15 +75,27 @@ function ContactColumn() {
       <h2 className="font-extrabold uppercase tracking-wider text-primary-heading-second md:text-xl">
         Get in touch
       </h2>
-      <div className="mt-3 flex flex-col gap-2 text-center text-sm tracking-wider text-white md:mt-6 md:gap-4 md:text-left md:text-base">
-        <p
-          className="cursor-pointer"
-          onClick={() => {
-            navigator.clipboard.writeText("+0044 07515106586");
-            toast.success("Phone number copied to clipboard");
-          }}
-        >
-          +0044 07515106586
+      <div className="mt-2 flex flex-col gap-2 text-center text-xs tracking-wider text-white md:mt-4 md:gap-3 md:text-left md:text-sm">
+        <p className="">
+          <span
+            className="cursor-pointer border-b border-white"
+            onClick={() => {
+              navigator.clipboard.writeText("07515106586");
+              toast.success("Phone number copied to clipboard");
+            }}
+          >
+            +0044 07515106586
+          </span>
+          <span className="mx-1.5">or</span>
+          <span
+            className="cursor-pointer border-b border-white"
+            onClick={() => {
+              navigator.clipboard.writeText("02033766160");
+              toast.success("Phone number copied to clipboard");
+            }}
+          >
+            +0044 02033766160
+          </span>
         </p>
         <p
           className="cursor-pointer"

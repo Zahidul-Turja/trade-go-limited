@@ -7,7 +7,8 @@ function AboutPage() {
   return (
     <>
       <PageHeader
-        image_url={"/about/about-header.jpg"}
+        // image_url={"/about/about-header.jpg"}
+        image_url={"/table.jpg"}
         title={"About Us"}
         page={"about"}
       />
