@@ -46,7 +46,7 @@ function ProductCard({
       className={`my-0 flex flex-col items-start justify-between px-5 md:flex-row md:px-small ${
         image_reversed && "md:flex-row-reverse"
       }`}
-      ref={component}
+      // ref={component}
     >
       <div className="my-6 w-full text-left md:my-0 md:w-[50%] lg:w-[70%]">
         <Link

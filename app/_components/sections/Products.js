@@ -42,7 +42,7 @@ function Products({ all_products = false, class_name = "" }) {
   return (
     <section
       className={`mx-auto w-full text-center lg:px-big ${class_name}`}
-      ref={component}
+      // ref={component}
     >
       {!all_products && (
         <h1 className="title-our-products text-xl font-extrabold uppercase tracking-wide text-primary-heading-main md:mb-10 md:text-3xl">
