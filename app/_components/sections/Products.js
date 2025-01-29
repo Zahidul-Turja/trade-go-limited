@@ -1,43 +1,43 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import ProductCard from "@/app/_components/ProductCard";
 import { products } from "@/app/_data/products";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 function Products({ all_products = false, class_name = "" }) {
-  const component = useRef(null);
+  // const component = useRef(null);
   const router = useRouter();
   let num_of_items = 4;
   if (all_products) num_of_items = products.length;
 
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".title-our-products",
-        { opacity: 0, y: 60 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: "power2.in",
-          scrollTrigger: {
-            trigger: ".title-our-products",
-            start: "top bottom",
-            end: "bottom 60%",
-            toggleActions: "play none none none",
-          },
-        },
-      );
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     gsap.fromTo(
+  //       ".title-our-products",
+  //       { opacity: 0, y: 60 },
+  //       {
+  //         y: 0,
+  //         opacity: 1,
+  //         duration: 0.5,
+  //         ease: "power2.in",
+  //         scrollTrigger: {
+  //           trigger: ".title-our-products",
+  //           start: "top bottom",
+  //           end: "top 0px",
+  //           toggleActions: "play none none none",
+  //         },
+  //       },
+  //     );
 
-      return () => ctx.revert(); // Cleanup
-    }, component);
-  }, []);
+  //     return () => ctx.revert(); // Cleanup
+  //   }, component);
+  // }, []);
 
   return (
     <section

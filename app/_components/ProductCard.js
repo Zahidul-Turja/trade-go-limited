@@ -1,13 +1,13 @@
-"use client";
+// "use client";
 
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 function ProductCard({
   id,
@@ -16,30 +16,30 @@ function ProductCard({
   description,
   image_reversed = false,
 }) {
-  const component = useRef(null);
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.fromTo(
-        component.current,
-        { opacity: 0, y: 60 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          delay: 0.5,
-          ease: "power2.in",
-          scrollTrigger: {
-            trigger: component.current,
-            start: "top bottom",
-            end: "bottom 60%",
-            toggleActions: "play none none none",
-          },
-        },
-      );
+  // const component = useRef(null);
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     gsap.fromTo(
+  //       component.current,
+  //       { opacity: 0, y: 90 },
+  //       {
+  //         y: 0,
+  //         opacity: 1,
+  //         duration: 0.5,
+  //         // delay: 0.5,
+  //         ease: "power2.in",
+  //         scrollTrigger: {
+  //           trigger: component.current,
+  //           start: "top bottom",
+  //           end: "top 0px",
+  //           toggleActions: "play none none none",
+  //         },
+  //       },
+  //     );
 
-      return () => ctx.revert(); // Cleanup
-    }, component);
-  }, []);
+  //     return () => ctx.revert(); // Cleanup
+  //   }, component);
+  // }, []);
 
   return (
     <div
