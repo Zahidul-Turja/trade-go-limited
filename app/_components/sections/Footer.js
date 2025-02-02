@@ -77,6 +77,7 @@ function ContactColumn() {
       </h2>
       <div className="mt-2 flex flex-col gap-2 text-center text-xs tracking-wider text-white md:mt-4 md:gap-3 md:text-left md:text-sm">
         <p className="">
+          <span className="font-bold">Phone: </span>
           <span
             className="cursor-pointer border-b border-white"
             onClick={() => {
@@ -84,9 +85,9 @@ function ContactColumn() {
               toast.success("Phone number copied to clipboard");
             }}
           >
-            +44 07515106586
+            07515106586
           </span>
-          <span className="mx-1.5">or</span>
+          <span className="mx-1.5">/</span>
           <span
             className="cursor-pointer border-b border-white"
             onClick={() => {
@@ -94,7 +95,7 @@ function ContactColumn() {
               toast.success("Phone number copied to clipboard");
             }}
           >
-            +44 02033766160
+            02033766160
           </span>
         </p>
         <p
@@ -104,15 +105,20 @@ function ContactColumn() {
             toast.success("Email copied to clipboard");
           }}
         >
-          info@tradegolimited.co.uk
+          <span className="font-bold">Email:</span> info@tradegolimited.co.uk
         </p>
-        <p className="">135 Tiptree Crescent, Ilford IG5 0SX, United Kingdom</p>
+        <p className="">
+          <span className="font-bold">Registered Address:</span> 135 Tiptree
+          Crescent, Ilford IG5 0SX, United Kingdom
+        </p>
         <Link
           href={"https://www.tradegolimited.co.uk"}
           target="_blank"
           className="hover:text-primary-heading-second"
         >
-          <span>www.tradegolimited.co.uk</span>
+          <span>
+            <span className="font-bold">Website:</span> www.tradegolimited.co.uk
+          </span>
         </Link>
       </div>
     </div>
