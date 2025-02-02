@@ -39,13 +39,10 @@ function NavigationColumn() {
         <Link href={"/products"} className="hover:text-primary-heading-second">
           Products
         </Link>
-        <Link
-          href={"/#industries"}
-          className="hover:text-primary-heading-second"
-        >
-          Industries we serve
+        <Link href={"/services"} className="hover:text-primary-heading-second">
+          Services
         </Link>
-        <Link href={"/#faqs"} className="hover:text-primary-heading-second">
+        <Link href={"/faqs"} className="hover:text-primary-heading-second">
           FAQs
         </Link>
       </div>
