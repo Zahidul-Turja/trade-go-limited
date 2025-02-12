@@ -1146,4 +1146,512 @@ export const products = [
       },
     ],
   },
+  {
+    id: 17,
+    title: "Professional Clean Total Care Detergent Powder",
+    image: "/product/prod-17.png",
+    description: [
+      "Professional Clean Total Care Detergent Powder is a premium, high-performance laundry detergent designed to deliver superior cleaning while protecting fabrics. Its advanced formula effectively removes tough stains, dirt, and odors while preserving the softness, color, and strength of fabrics. Ideal for both residential and commercial use, this detergent ensures long-lasting freshness and hygiene in every wash.",
+      "Professional Clean Total Care Detergent Powder is the ultimate laundry solution for those seeking powerful stain removal, fabric care, and long-lasting freshness. Whether for home or business use, it guarantees high-quality cleaning while keeping fabrics soft, vibrant, and fresh after every wash.",
+    ],
+    keys: [
+      {
+        "Advanced Stain Removal ":
+          "Effectively removes dirt, grease, oils, and tough stains from fabrics.",
+      },
+      {
+        "Fabric Protection":
+          "Helps maintain fabric strength and softness, extending the life of clothing and linens.",
+      },
+      {
+        "Color & White Care ":
+          "Protects colors from fading while keeping whites bright and fresh.",
+      },
+      {
+        "Long-Lasting Freshness":
+          "Infuses laundry with a pleasant fragrance that lingers after washing.",
+      },
+      {
+        "Versatile Use":
+          "Suitable for various fabrics, including everyday wear, linens, and heavily soiled workwear.",
+      },
+      {
+        "Economical & Efficient":
+          "A concentrated formula ensures effective cleaning with less detergent per wash.",
+      },
+      {
+        "High Foam & Low Residue":
+          "Produces rich lather while rinsing out easily, leaving no residue on clothes.",
+      },
+    ],
+    usages: [
+      {
+        "Daily Laundry ":
+          "Ideal for washing clothes, towels, and bedding at home.",
+      },
+      {
+        "Heavy-Duty Cleaning":
+          "Suitable for workwear, uniforms, and industrial garments exposed to grease and dirt.",
+      },
+      {
+        "Commercial Laundry":
+          "Used in laundromats, hotels, hospitals, and catering businesses.",
+      },
+      {
+        "Hand Wash & Machine Wash":
+          "Works effectively in both manual and machine washing processes.",
+      },
+    ],
+    applications: [
+      {
+        "Hotels & Hospitality":
+          "Keeps bed linens, towels, and uniforms fresh, clean, and hygienic.",
+      },
+      {
+        "Healthcare & Medical Facilities":
+          "Ensures hospital linens and uniforms are sanitized and odor-free.",
+      },
+      {
+        "Restaurants & Catering":
+          "Effectively removes food stains, grease, and odors from uniforms and kitchen textiles.",
+      },
+      {
+        "Residential Use":
+          "Perfect for home laundry needs, offering deep cleaning and fabric care.",
+      },
+      {
+        "Commercial Laundromats":
+          "Provides high-efficiency cleaning for bulk laundry loads.",
+      },
+    ],
+    safety: [
+      {
+        "Avoid Contact with Eyes":
+          "In case of eye contact, rinse immediately with plenty of water. If irritation persists, seek medical attention.",
+      },
+      {
+        "Keep Out of Reach of Children":
+          "Store in a secure location, away from children, to prevent accidental ingestion or misuse.",
+      },
+      {
+        "Use as Directed":
+          "Follow dosage instructions to achieve optimal cleaning without residue buildup.",
+      },
+      {
+        "Not for Ingestion":
+          "This detergent powder is for laundry use only. If swallowed, seek medical assistance immediately.",
+      },
+      {
+        "Wear Gloves if Needed":
+          "It is advisable to wear gloves if you have sensitive skin or are handling large quantities of detergent.",
+      },
+      {
+        "Proper Storage":
+          "Store in a cool, dry place, away from direct heat or moisture to prevent clumping and ensure the detergent powder remains effective.",
+      },
+    ],
+  },
+  {
+    id: 18,
+    title: "Professional Clean Ultra Care Detergent Powder",
+    image: "/product/prod-18.png",
+    description: [
+      "Professional Clean Ultra Care Detergent Powder is a premium-grade laundry detergent designed to provide superior cleaning performance while being gentle on fabrics. With its advanced stain-fighting formula, it effectively removes dirt, grease, and tough stains while preserving the softness, strength, and vibrancy of clothes. Ideal for both residential and commercial laundry applications, this detergent delivers long-lasting freshness and fabric care with every wash.",
+      "Professional Clean Ultra Care Detergent Powder is the perfect solution for those seeking an exceptional balance of deep cleaning power and fabric care. Whether for home or business use, this detergent ensures spotless, fresh, and well-maintained fabrics after every wash.",
+    ],
+    keys: [
+      {
+        "Powerful Stain Removal":
+          "Breaks down and eliminates tough stains such as grease, oil, food, and dirt.",
+      },
+      {
+        "Fabric Protection Technology":
+          "Maintains fabric integrity, preventing wear and tear over time.",
+      },
+      {
+        "Color & White Care":
+          "Enhances brightness and prevents fading, keeping clothes looking new.",
+      },
+      {
+        "Deep Cleaning Action":
+          "Penetrates fibers to lift dirt and residues, ensuring a thorough wash.",
+      },
+      {
+        "Long-Lasting Freshness":
+          "Infuses fabrics with a refreshing fragrance that lasts.",
+      },
+      {
+        "Low Residue Formula":
+          "Rinses out easily, preventing detergent buildup and skin irritation.",
+      },
+      {
+        "Suitable for All Water Types":
+          "Effective in both hard and soft water conditions.",
+      },
+      {
+        "Versatile Use":
+          "Works for various fabrics and is compatible with both machine and hand washing.",
+      },
+    ],
+    usages: [
+      {
+        "Everyday Laundry":
+          "Ideal for daily washing of clothes, linens, and towels.",
+      },
+      {
+        "Heavy-Duty Cleaning":
+          "Removes stubborn stains from workwear, uniforms, and industrial fabrics.",
+      },
+      {
+        "Commercial Laundry":
+          "Suitable for laundromats, hotels, hospitals, and catering businesses.",
+      },
+      {
+        "Delicate Fabrics":
+          "Provides gentle care while delivering effective stain removal.",
+      },
+      {
+        "Hand & Machine Wash":
+          "Can be used in both traditional and high-efficiency washing machines.",
+      },
+    ],
+    applications: [
+      {
+        "Hotels & Hospitality":
+          "Keeps towels, linens, and uniforms fresh, clean, and hygienic.",
+      },
+      {
+        "Healthcare & Medical Facilities":
+          "Ensures sanitization of hospital linens, scrubs, and uniforms.",
+      },
+      {
+        "Restaurants & Catering":
+          "Removes food stains, grease, and odors from aprons, tablecloths, and uniforms.",
+      },
+      {
+        "Residential Use":
+          "Perfect for household laundry, offering deep cleaning and fabric care.",
+      },
+      {
+        "Commercial Laundromats":
+          "Provides efficiency and effectiveness for high-volume laundry operations.",
+      },
+    ],
+    safety: [
+      {
+        "Avoid Contact with Eyes":
+          "In case of eye contact, rinse immediately with plenty of water. If irritation persists, seek medical attention.",
+      },
+      {
+        "Keep Out of Reach of Children":
+          "Store in a secure location, away from children, to prevent accidental ingestion or misuse.",
+      },
+      {
+        "Use as Recommended":
+          "Follow dosage instructions to achieve optimal cleaning without residue buildup.",
+      },
+      {
+        "Not for Ingestion":
+          "This detergent powder is for laundry use only. If swallowed, seek medical assistance immediately.",
+      },
+      {
+        "Wear Gloves if Needed":
+          "It is advisable to wear gloves if you have sensitive skin or are handling large quantities of detergent.",
+      },
+      {
+        "Proper Storage":
+          "Keep in a cool, dry place away from direct heat and moisture to maintain effectiveness.",
+      },
+    ],
+  },
+  {
+    id: 19,
+    title:
+      "Professional Clean Super Concentrated High Strength Laundry Emulsifier",
+    image: "/product/prod-19.png",
+    description: [
+      "Professional Clean Super Concentrated High Strength Laundry Emulsifier is a powerful detergent booster designed to break down stubborn grease, oil, and protein-based stains in commercial and industrial laundry applications. This advanced formula effectively lifts and disperses heavy soils, ensuring fabrics come out thoroughly clean and fresh. Ideal for use in laundromats, hotels, hospitals, and food service industries, it enhances the performance of standard laundry detergents, making it an essential component of any professional laundry system.",
+      "Professional Clean Super Concentrated High Strength Laundry Emulsifier is the ultimate solution for industries requiring a superior grease-fighting and stain-removing booster. Its powerful formulation ensures exceptional cleaning performance, making it the perfect choice for professional and industrial laundry operations.",
+    ],
+    keys: [
+      {
+        "High-Strength Grease & Oil Removal":
+          "Effectively emulsifies and lifts tough stains such as oils, fats, and grease (FOG).",
+      },
+      {
+        "Super Concentrated Formula ":
+          "A little goes a long way, reducing overall product consumption and costs.",
+      },
+      {
+        "Deep Cleaning Power":
+          "Targets protein-based stains like blood, sweat, and food residues.",
+      },
+      {
+        "Enhances Detergent Performance":
+          "Works alongside regular detergents to maximize stain removal.",
+      },
+      {
+        "Residue-Free Rinsing":
+          "Leaves no detergent buildup, ensuring fabrics remain soft and fresh..",
+      },
+      {
+        "Safe for Various Fabrics":
+          "Suitable for cotton, polyester, and blended fabrics without causing damage.",
+      },
+      {
+        "Works in All Water Temperatures":
+          "Effective in hot, warm, or cold water for flexible usage.",
+      },
+    ],
+    usages: [
+      {
+        "Industrial & Commercial Laundry":
+          "Perfect for removing stubborn stains from workwear, uniforms, and industrial textiles.",
+      },
+      {
+        "Hotels & Hospitality":
+          "Cleans sheets, towels, and linens while preserving fabric integrity.",
+      },
+      {
+        "Healthcare & Hospitals":
+          "Removes medical residues, body fluids, and other organic stains.",
+      },
+      {
+        "Food Service & Restaurants":
+          "Effectively eliminates grease, oils, and food stains from kitchen uniforms and table linens.",
+      },
+      {
+        "Laundromats & Large-Scale Washing Facilities":
+          "Ensures consistent deep-cleaning results in high-volume laundry operations.",
+      },
+    ],
+    applications: [
+      {
+        "Automatic Dispensing":
+          "Add to the wash cycle along with detergent for improved stain removal.",
+      },
+      {
+        "Pre-Soaking":
+          "Dilute with warm water and soak heavily soiled fabrics before washing.",
+      },
+      {
+        "Spot Treatment":
+          "Apply a small amount directly to tough stains, let sit for 5–10 minutes, then launder as usual.",
+      },
+    ],
+    safety: [
+      {
+        "Avoid Contact with Eyes":
+          "In case of eye contact, rinse immediately with plenty of water. If irritation persists, seek medical attention.",
+      },
+      {
+        "Keep Out of Reach of Children":
+          "Store in a secure location, away from children, to prevent accidental ingestion or misuse.",
+      },
+      {
+        "Use in Well-Ventilated Areas":
+          "Avoid inhalation of fumes, especially in enclosed spaces.",
+      },
+      {
+        "Follow Manufacturer Guidelines":
+          "Adhere to recommended dosages to prevent fabric damage.",
+      },
+      {
+        "Store Properly":
+          "Keep in a cool, dry place away from direct heat and moisture..",
+      },
+    ],
+  },
+  {
+    id: 20,
+    title: "Professional Clean Liquid Laundry Sour",
+    image: "/product/prod-20.png",
+    description: [
+      "Professional Clean Liquid Laundry Sour is a high-performance neutralizing agent designed to balance the pH level of fabrics during the final rinse cycle. It effectively removes alkaline residues from detergents, preventing fabric damage, discoloration, and yellowing caused by high pH levels. This product is ideal for commercial laundry operations in hotels, hospitals, laundromats, and food service industries, ensuring linens, uniforms, and textiles remain soft, fresh, and long-lasting.",
+      "Professional Clean Liquid Laundry Sour is a crucial step in professional laundry care, ensuring fabrics remain soft, clean, and pH-balanced after every wash. Ideal for commercial applications, it enhances fabric longevity and ensures a comfortable feel while preventing detergent buildup and mineral stains.",
+    ],
+    keys: [
+      {
+        "pH Neutralization":
+          "Balances the pH of fabrics by neutralizing alkaline detergent residues.",
+      },
+      {
+        "Prevents Fabric Damage":
+          "Protects textiles from discoloration, yellowing, and degradation caused by residual alkalinity.",
+      },
+      {
+        "Reduces Skin Irritation":
+          "Ensures fabrics are free from harsh detergent residues that may cause skin irritation.",
+      },
+      {
+        "Enhances Fabric Softness":
+          "Improves the feel of fabrics by reducing stiffness and detergent buildup.",
+      },
+      {
+        "Prevents Iron & Hard Water Stains":
+          "Helps remove mineral deposits and water hardness residues from fabrics.",
+      },
+      {
+        "Optimized for Commercial Use":
+          "Designed for high-volume laundry facilities, providing effective results with minimal usage.",
+      },
+      {
+        "Compatible with Various Fabrics":
+          "Safe for cotton, polyester, and synthetic blends used in hospitality, healthcare, and food service industries.",
+      },
+    ],
+    usages: [
+      {
+        "Automatic Dispensing":
+          "Add during the final rinse cycle according to machine dosage guidelines.",
+      },
+      {
+        "Manual Use":
+          "Dilute with water and add to the final rinse stage to ensure even distribution.",
+      },
+      {
+        "Recommended Dosage":
+          "Follow manufacturer instructions for optimal results based on water hardness and fabric load size.",
+      },
+    ],
+    applications: [
+      {
+        "Commercial & Industrial Laundry":
+          "Essential for high-traffic laundries handling large loads of fabrics daily.",
+      },
+      {
+        "Hotels & Hospitality":
+          "Maintains the pristine condition of linens, towels, and bedding.",
+      },
+      {
+        "Healthcare & Medical Facilities":
+          "Ensures hospital linens, scrubs, and uniforms are pH-balanced and comfortable for patients and staff.",
+      },
+      {
+        "Food Service & Restaurants":
+          "Prevents detergent residue buildup on table linens, napkins, and uniforms.",
+      },
+      {
+        "Laundromats & Professional Cleaning Services":
+          "Provides a premium finishing touch to customer laundry, ensuring softness and longevity.",
+      },
+    ],
+    safety: [
+      {
+        "Avoid Contact with Eyes":
+          "In case of eye contact, rinse immediately with plenty of water. If irritation persists, seek medical attention.",
+      },
+      {
+        "Keep Out of Reach of Children":
+          "Store in a secure location, away from children, to prevent accidental ingestion or misuse.",
+      },
+      {
+        "Use in a Well-Ventilated Area":
+          "Avoid inhalation of fumes, especially in enclosed spaces.",
+      },
+      {
+        "Proper Storage":
+          "Keep in a cool, dry place away from direct heat and moisture to maintain effectiveness.",
+      },
+      {
+        "Follow Manufacturer Guidelines":
+          "Adhere to recommended dosages to prevent overuse or fabric damage.",
+      },
+    ],
+  },
+  {
+    id: 21,
+    title: "Professional Clean Ultra Care Liquid Detergent",
+    image: "/product/prod-21.jpg",
+    description: [
+      "Professional Clean Ultra Care Liquid Detergent is a premium, high-performance laundry detergent designed to deliver superior cleaning power while protecting fabric quality. Its advanced formula effectively removes tough stains, eliminates odors, and preserves the softness and color of garments. Ideal for both commercial and domestic use, this detergent ensures a deep clean while being gentle on clothes and skin.",
+      "Professional Clean Ultra Care Liquid Detergent provides a perfect balance of strong cleaning power and fabric care, making it the ideal choice for households and businesses that require a high-quality, efficient laundry solution.",
+    ],
+    keys: [
+      {
+        "Powerful Stain Removal":
+          "Effectively breaks down and lifts stubborn stains such as grease, oil, dirt, and protein-based residues.",
+      },
+      {
+        "Fabric Protection Technology":
+          "Maintains fabric strength, softness, and color vibrancy after multiple washes.",
+      },
+      {
+        "Deep Cleaning & Odor Elimination":
+          "Penetrates deep into fibers to remove dirt and odors, leaving laundry smelling fresh.",
+      },
+      {
+        "Low-Foaming Formula":
+          "Suitable for both high-efficiency (HE) and standard washing machines.",
+      },
+      {
+        "Gentle on Skin":
+          "Dermatologically tested and free from harsh irritants.",
+      },
+      {
+        "Works in All Water Temperatures":
+          "Performs effectively in hot, warm, and cold water.",
+      },
+      {
+        "Biodegradable & Eco-Friendly":
+          "Formulated with environmentally safe ingredients.",
+      },
+    ],
+    usages: [
+      {
+        "Household Laundry":
+          "Ideal for everyday clothing, linens, towels, and delicate fabrics.",
+      },
+      {
+        "Commercial Laundry":
+          "Suitable for hotels, hospitals, laundromats, and uniform cleaning services.",
+      },
+      {
+        "Food & Beverage Industry":
+          "Effectively removes food spills, grease, and beverage stains from uniforms and linens.",
+      },
+      {
+        "Healthcare & Hospitality":
+          "Ensures hygiene by removing bacteria and contaminants from medical scrubs and linens.",
+      },
+    ],
+    applications: [
+      {
+        "Top-Load Machines":
+          "Use 50-100ml per regular load, adjusting for heavily soiled clothes.",
+      },
+      {
+        "Front-Load Machines": "Use 40-80ml per load for optimal cleaning.",
+      },
+      {
+        Handwashing:
+          "Add 20-30ml per 10L of water, soak for a few minutes, then rinse thoroughly.",
+      },
+      {
+        "For Tough Stains":
+          "Apply a small amount directly onto the stain, let it sit for 5–10 minutes before washing.",
+      },
+    ],
+    safety: [
+      {
+        "Avoid Eye & Skin Contact":
+          "If contact occurs, rinse immediately with plenty of water.",
+      },
+      {
+        "Keep Out of Reach of Children":
+          "Store in a secure place to prevent accidental ingestion.",
+      },
+      {
+        "Do Not Ingest": "If swallowed, seek medical attention immediately.",
+      },
+      {
+        "Store Properly":
+          "Keep in a cool, dry place away from direct sunlight and extreme temperatures.",
+      },
+      {
+        "Use as Directed":
+          "Follow the recommended dosage for best results and fabric protection.",
+      },
+    ],
+  },
 ];
