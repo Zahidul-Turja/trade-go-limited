@@ -1,6 +1,7 @@
 export const products = [
   {
     id: 1,
+    slug: "professional-clean-blue-excel-detergent-powder",
     title: "Professional Clean Blue Excel Detergent Powder",
     image: "/product/prod-1.jpg",
     description: [
@@ -106,6 +107,7 @@ export const products = [
   },
   {
     id: 2,
+    slug: "professional-clean-Blue-super-excel-detergent-powder",
     title: "Professional Clean Blue Super Excel Detergent Powder",
     image: "/product/prod-2.jpg",
     description: [
@@ -211,6 +213,7 @@ export const products = [
   },
   {
     id: 3,
+    slug: "professional-clean-liquid-laundry-detergent",
     title: "Professional Clean Liquid Laundry Detergent",
     image: "/product/prod-3.jpg",
     description: [
@@ -317,6 +320,7 @@ export const products = [
   },
   {
     id: 4,
+    slug: "professional-clean-non-bio-liquid-laundry-detergent",
     title: "Professional Clean Non-Bio Liquid Laundry Detergent",
     image: "/product/prod-4.jpg",
     description: [
@@ -418,6 +422,7 @@ export const products = [
   },
   {
     id: 5,
+    slug: "professional-clean-concentrated-laundry-emulsifier",
     title: "Professional Clean Concentrated Laundry Emulsifier",
     image: "/product/prod-5.jpg",
     description: [
@@ -519,6 +524,7 @@ export const products = [
   },
   {
     id: 6,
+    slug: "professional-clean-fabric-softener",
     title: "Professional Clean Fabric Softener",
     image: "/product/prod-6.jpg",
     description: [
@@ -604,6 +610,7 @@ export const products = [
   },
   {
     id: 7,
+    slug: "professional-clean-alkaline-laundry-booster",
     title: "Professional Clean ALKALINE Laundry Booster",
     image: "/product/prod-7.jpg",
     description: [
@@ -700,6 +707,7 @@ export const products = [
   },
   {
     id: 8,
+    slug: "professional-clean-hydrogen-peroxide",
     title: "Professional Clean Hydrogen Peroxide",
     image: "/product/prod-8.jpg",
     description: [
@@ -762,6 +770,7 @@ export const products = [
   },
   {
     id: 9,
+    slug: "professional-clean-low-temp-liquid-destainer",
     title: "Professional Clean Low Temp Liquid Destainer",
     image: "/product/prod-9.jpg",
     description: [
@@ -818,6 +827,7 @@ export const products = [
   },
   {
     id: 10,
+    slug: "professional-clean-liquid-starch-pva-synthetic",
     title: "Professional Clean Liquid Starch (PVA Synthetic)",
     image: "/product/prod-10.jpg",
     description: [
@@ -874,6 +884,7 @@ export const products = [
   },
   {
     id: 11,
+    slug: "professional-clean-sodium-hypochlorite",
     title: "Professional Clean Sodium Hypochlorite 14-15% 25Ltr / 1000 Ltr IBC",
     image: "/product/prod-11.jpg",
     description: [
@@ -933,6 +944,7 @@ export const products = [
   },
   {
     id: 12,
+    slug: "professional-clean-maize-starch",
     title: "Professional Clean Maize Starch 25Kg",
     image: "/product/prod-12.png",
     description: [
@@ -979,6 +991,7 @@ export const products = [
   },
   {
     id: 13,
+    slug: "professional-clean-sodium-percarbonate-powder",
     title: "Professional Clean Sodium Percarbonate (Powder)",
     image: "/product/prod-13.png",
     description: [
@@ -1028,6 +1041,7 @@ export const products = [
   },
   {
     id: 14,
+    slug: "professional-clean-stain-removing-powder",
     title: "Professional Clean Stain Removing Powder",
     image: "/product/prod-14.png",
     description: [
@@ -1073,6 +1087,7 @@ export const products = [
   },
   {
     id: 15,
+    slug: "professional-clean-sodium-metasilicate",
     title: "Professional Clean Sodium Metasilicate",
     image: "/product/prod-15.jpg",
     description: [
@@ -1118,6 +1133,7 @@ export const products = [
   },
   {
     id: 16,
+    slug: "professional-clean-water-softening-salt-tablets",
     title: "Professional Clean Water Softening Salt Tablets",
     image: "/product/prod-16.jpg",
     description: [
@@ -1148,6 +1164,7 @@ export const products = [
   },
   {
     id: 17,
+    slug: "professional-clean-total-care-detergent-powder",
     title: "Professional Clean Total Care Detergent Powder",
     image: "/product/prod-17.png",
     description: [
@@ -1253,6 +1270,7 @@ export const products = [
   },
   {
     id: 18,
+    slug: "professional-clean-ultra-care-detergent-powder",
     title: "Professional Clean Ultra Care Detergent Powder",
     image: "/product/prod-18.png",
     description: [
@@ -1366,9 +1384,10 @@ export const products = [
   },
   {
     id: 19,
+    slug: "professional-clean-super-concentrated-high-strength-laundry-emulsifier",
     title:
       "Professional Clean Super Concentrated High Strength Laundry Emulsifier",
-    image: "/product/prod-19.png",
+    image: "/product/prod-19.jpg",
     description: [
       "Professional Clean Super Concentrated High Strength Laundry Emulsifier is a powerful detergent booster designed to break down stubborn grease, oil, and protein-based stains in commercial and industrial laundry applications. This advanced formula effectively lifts and disperses heavy soils, ensuring fabrics come out thoroughly clean and fresh. Ideal for use in laundromats, hotels, hospitals, and food service industries, it enhances the performance of standard laundry detergents, making it an essential component of any professional laundry system.",
       "Professional Clean Super Concentrated High Strength Laundry Emulsifier is the ultimate solution for industries requiring a superior grease-fighting and stain-removing booster. Its powerful formulation ensures exceptional cleaning performance, making it the perfect choice for professional and industrial laundry operations.",
@@ -1464,6 +1483,7 @@ export const products = [
   },
   {
     id: 20,
+    slug: "professional-clean-liquid-laundry-sour",
     title: "Professional Clean Liquid Laundry Sour",
     image: "/product/prod-20.png",
     description: [
@@ -1561,6 +1581,7 @@ export const products = [
   },
   {
     id: 21,
+    slug: "professional-clean-ultra-care-liquid-detergent",
     title: "Professional Clean Ultra Care Liquid Detergent",
     image: "/product/prod-21.jpg",
     description: [
