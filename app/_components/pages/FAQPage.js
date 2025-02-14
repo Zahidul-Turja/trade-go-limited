@@ -137,7 +137,7 @@ const FAQSection = () => {
                 className="flex w-full items-center justify-between px-6 py-4 text-left transition-colors hover:bg-gray-50"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
               >
-                <span className="text-sm font-semibold text-gray-900 md:text-lg">
+                <span className="text-base font-bold text-gray-900 md:text-lg md:font-semibold">
                   {faq.question}
                 </span>
                 <div className="transition-transform duration-300 ease-in-out">
@@ -154,10 +154,8 @@ const FAQSection = () => {
                 }`}
                 ref={(el) => (contentRefs.current[index] = el)}
               >
-                <div className="px-6 pb-4">
-                  <p className="text-xs text-gray-600 md:text-base">
-                    {faq.answer}
-                  </p>
+                <div className="px-6 py-2 md:py-0 md:pb-4">
+                  <p className="text-base text-gray-600">{faq.answer}</p>
                 </div>
               </div>
             </div>

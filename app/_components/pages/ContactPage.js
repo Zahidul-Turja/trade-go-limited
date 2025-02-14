@@ -60,7 +60,7 @@ const ContactPage = () => {
         <div className="gap-16 md:grid-cols-2">
           {/* Contact Information */}
           <div className="space-y-8">
-            <h2 className="mb-8 text-xl font-bold text-gray-900 md:text-2xl">
+            <h2 className="mb-8 text-center text-2xl font-extrabold uppercase text-primary-heading-main md:text-left">
               Get in Touch
             </h2>
             <div className="space-y-6">

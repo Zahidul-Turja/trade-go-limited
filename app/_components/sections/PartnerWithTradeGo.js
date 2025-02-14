@@ -13,7 +13,7 @@ function PartnerWithTradeGo() {
         </p>
         <Link
           href={"/contact"}
-          className="rounded-lg bg-white px-4 py-3 text-xs font-semibold text-primary-heading-main transition-colors hover:bg-gray-100 md:px-8 md:py-3 md:text-base"
+          className="rounded-lg bg-white px-5 py-3 text-sm font-semibold text-primary-heading-main transition-colors hover:bg-gray-100 md:px-8 md:py-3 md:text-base"
         >
           Contact Us Today
         </Link>
