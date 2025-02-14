@@ -45,10 +45,10 @@ const ContactPage = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center bg-primary bg-opacity-50">
           <div className="text-center text-white">
-            <h1 className="mb-4 text-2xl font-bold uppercase md:text-5xl">
+            <h1 className="mb-2 text-3xl font-bold uppercase md:mb-4 md:text-5xl">
               Contact Us
             </h1>
-            <p className="max-w-2xl text-xl">
+            <p className="max-w-2xl text-base md:text-xl">
               Ready to elevate your laundry operations? Get in touch with us
               today!
             </p>
@@ -60,7 +60,7 @@ const ContactPage = () => {
         <div className="gap-16 md:grid-cols-2">
           {/* Contact Information */}
           <div className="space-y-8">
-            <h2 className="mb-8 text-2xl font-bold text-gray-900">
+            <h2 className="mb-8 text-xl font-bold text-gray-900 md:text-2xl">
               Get in Touch
             </h2>
             <div className="space-y-6">

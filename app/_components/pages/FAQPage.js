@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { ChevronDown, ChevronUp, Phone, Mail, Globe } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import PartnerWithTradeGo from "@/app/_components/sections/PartnerWithTradeGo";
 
 const FAQPage = () => {
   return (
@@ -18,7 +18,7 @@ const FAQPage = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center bg-primary bg-opacity-70">
           <div className="text-center text-white">
-            <h1 className="mb-4 text-3xl font-extrabold uppercase md:text-5xl">
+            <h1 className="mb-2 text-3xl font-extrabold uppercase md:mb-4 md:text-5xl">
               Frequently Asked Questions (FAQs)
             </h1>
             <p className="mx-auto max-w-[90%] px-2.5 py-2.5 text-sm md:max-w-5xl md:px-0 md:py-0 md:text-xl">
@@ -32,24 +32,7 @@ const FAQPage = () => {
 
       <FAQSection />
 
-      {/* Contact Section */}
-      <div className="bg-primary py-16 text-white">
-        <div className="max-w-screen mx-auto text-center md:max-w-4xl md:px-4">
-          <h2 className="text-xl font-bold uppercase md:mb-4 md:py-0 md:text-3xl">
-            Partner with TradeGO Limited
-          </h2>
-          <p className="py-5 text-sm md:mb-8 md:py-0 md:text-xl">
-            Get tailored services and dependable support that keeps your
-            business running at its best.
-          </p>
-          <Link
-            href={"/contact"}
-            className="rounded-lg bg-white px-8 py-3 font-semibold text-primary transition-colors hover:bg-gray-100"
-          >
-            Contact Us Today
-          </Link>
-        </div>
-      </div>
+      <PartnerWithTradeGo />
     </div>
   );
 };
@@ -154,7 +137,7 @@ const FAQSection = () => {
                 className="flex w-full items-center justify-between px-6 py-4 text-left transition-colors hover:bg-gray-50"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
               >
-                <span className="text-lg font-semibold text-gray-900">
+                <span className="text-sm font-semibold text-gray-900 md:text-lg">
                   {faq.question}
                 </span>
                 <div className="transition-transform duration-300 ease-in-out">
@@ -172,7 +155,9 @@ const FAQSection = () => {
                 ref={(el) => (contentRefs.current[index] = el)}
               >
                 <div className="px-6 pb-4">
-                  <p className="text-gray-600">{faq.answer}</p>
+                  <p className="text-xs text-gray-600 md:text-base">
+                    {faq.answer}
+                  </p>
                 </div>
               </div>
             </div>
