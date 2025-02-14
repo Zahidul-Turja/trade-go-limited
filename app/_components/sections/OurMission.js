@@ -29,17 +29,17 @@ function OurMission() {
           <h1 className="text-base font-bold uppercase md:text-xl md:font-extrabold">
             EMPOWER COMMERCIAL BUSINESSES
           </h1>
-          <p className="mt-4 text-justify text-sm leading-7 text-white/90 md:text-left md:text-base">
+          <p className="mt-2 text-justify text-sm text-white/90 md:mt-3 md:text-left md:text-base md:leading-7">
             At TradeGO Limited, our mission is to empower commercial laundries
             with exceptional cleaning solutions that deliver spotless results
             every time. We are dedicated to providing high-quality, innovative
             products that not only meet the toughest cleaning challenges but
             also uphold our commitment to environmental sustainability.
           </p>
-          <h1 className="text-base font-bold uppercase md:text-xl md:font-extrabold">
+          <h1 className="mt-8 text-base font-bold uppercase md:text-xl md:font-extrabold">
             ECO-FRIENDLY SOLUTIONS
           </h1>
-          <p className="mt-4 text-justify text-sm leading-7 text-white/90 md:text-left md:text-base">
+          <p className="mt-2 text-justify text-sm text-white/90 md:mt-3 md:text-left md:text-base md:leading-7">
             We believe in creating value for our customers by combining
             performance, reliability, and eco-consciousness in everything we do.
             By prioritizing your success and satisfaction, we strive to build
