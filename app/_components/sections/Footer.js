@@ -76,7 +76,7 @@ function ContactColumn() {
         <p className="">
           <span className="font-bold">Phone: </span>
           <span
-            className="cursor-pointer border-b border-white"
+            className="cursor-pointer"
             onClick={() => {
               navigator.clipboard.writeText("07515106586");
               toast.success("Phone number copied to clipboard");
@@ -86,7 +86,7 @@ function ContactColumn() {
           </span>
           <span className="mx-1.5">/</span>
           <span
-            className="cursor-pointer border-b border-white"
+            className="cursor-pointer"
             onClick={() => {
               navigator.clipboard.writeText("02033766160");
               toast.success("Phone number copied to clipboard");
