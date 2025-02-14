@@ -70,7 +70,7 @@ const ContactPage = () => {
                   href={info.href}
                   className="flex items-start space-x-4 rounded-lg bg-white p-4 shadow-md transition-shadow hover:shadow-lg"
                 >
-                  <div className="text-blue-600">{info.icon}</div>
+                  <div className="text-primary-heading-main">{info.icon}</div>
                   <div>
                     <h3 className="font-semibold text-gray-900">
                       {info.title}
