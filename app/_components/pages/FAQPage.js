@@ -154,7 +154,7 @@ const FAQSection = () => {
                 }`}
                 ref={(el) => (contentRefs.current[index] = el)}
               >
-                <div className="px-6 py-2 md:py-0 md:pb-4">
+                <div className="px-6 py-4 md:py-0">
                   <p className="text-base text-gray-600">{faq.answer}</p>
                 </div>
               </div>

@@ -63,17 +63,17 @@ const ServicesPage = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="rounded-lg bg-gray-50 p-5 shadow-lg transition-shadow hover:shadow-xl md:p-8"
+              className="rounded-lg bg-gray-50 px-4 py-6 shadow-lg transition-shadow hover:shadow-xl md:p-8"
             >
               <div className="flex flex-col items-center gap-4 space-x-4 md:flex-row md:items-start">
-                <div className="flex-shrink-0 rounded-full bg-primary p-3 text-3xl text-white md:p-4 md:text-5xl">
+                <div className="flex-shrink-0 rounded-full bg-primary p-4 text-4xl text-white md:text-5xl">
                   {service.icon}
                 </div>
                 <div>
-                  <h3 className="mb-2 text-center text-lg font-semibold text-gray-900 md:text-left md:text-2xl">
+                  <h3 className="mb-2 text-center text-xl font-semibold text-gray-900 md:text-left md:text-2xl">
                     {service.title}
                   </h3>
-                  <p className="text-justify text-sm text-gray-600 md:text-left md:text-base">
+                  <p className="text-justify text-base text-gray-600 md:text-left">
                     {service.description}
                   </p>
                 </div>
