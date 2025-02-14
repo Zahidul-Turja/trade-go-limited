@@ -11,7 +11,8 @@ import Safety from "../sections/Safety";
 
 function ProductDetailsPage() {
   const params = useParams();
-  const product = products[params.id - 1];
+
+  const product = products.find((product) => product.slug === params.slug);
 
   return (
     <>
@@ -26,7 +27,7 @@ function ProductDetailsPage() {
       <section className="mx-auto w-full px-5 py-6 text-center md:py-medium lg:px-big">
         <div className="flex flex-col justify-between md:flex-row">
           <div className="text-justify md:w-[65%]">
-            <h1 className="text-xl md:text-3xl font-extrabold uppercase text-primary-heading-main">
+            <h1 className="text-xl font-extrabold uppercase text-primary-heading-main md:text-3xl">
               {product.title}
             </h1>
             {product.description.map((paragraph, index) => (

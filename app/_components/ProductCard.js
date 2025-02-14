@@ -11,6 +11,7 @@ import Link from "next/link";
 
 function ProductCard({
   id,
+  slug,
   image,
   title,
   description,
@@ -50,13 +51,13 @@ function ProductCard({
     >
       <div className="my-6 w-full text-left md:my-0 md:w-[50%] lg:w-[70%]">
         <Link
-          href={`/products/${id}`}
+          href={`/products/${slug}`}
           className="mb-3 block text-lg font-bold text-primary md:text-2xl"
         >
           {title}
         </Link>
         <Link
-          href={`/products/${id}`}
+          href={`/products/${slug}`}
           className="relative h-[25rem] w-[25rem] cursor-pointer overflow-hidden rounded-md md:hidden"
         >
           <Image
@@ -75,7 +76,7 @@ function ProductCard({
             </p>
           ))}
           <Link
-            href={`/products/${id}`}
+            href={`/products/${slug}`}
             className="cursor-pointer border-b-2 border-primary-footer p-0.5 text-sm font-semibold text-primary-footer"
           >
             See more.
@@ -83,7 +84,7 @@ function ProductCard({
         </p>
       </div>
       <Link
-        href={`/products/${id}`}
+        href={`/products/${slug}`}
         className="relative hidden h-[20rem] w-[18rem] cursor-pointer overflow-hidden rounded-md md:block"
       >
         <Image

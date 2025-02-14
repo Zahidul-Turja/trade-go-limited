@@ -1,49 +1,17 @@
 "use client";
 
-// import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import ProductCard from "@/app/_components/ProductCard";
 import { products } from "@/app/_data/products";
 
-// gsap.registerPlugin(ScrollTrigger);
-
 function Products({ all_products = false, class_name = "" }) {
-  // const component = useRef(null);
   const router = useRouter();
   let num_of_items = 4;
   if (all_products) num_of_items = products.length;
 
-  // useEffect(() => {
-  //   let ctx = gsap.context(() => {
-  //     gsap.fromTo(
-  //       ".title-our-products",
-  //       { opacity: 0, y: 60 },
-  //       {
-  //         y: 0,
-  //         opacity: 1,
-  //         duration: 0.5,
-  //         ease: "power2.in",
-  //         scrollTrigger: {
-  //           trigger: ".title-our-products",
-  //           start: "top bottom",
-  //           end: "top 0px",
-  //           toggleActions: "play none none none",
-  //         },
-  //       },
-  //     );
-
-  //     return () => ctx.revert(); // Cleanup
-  //   }, component);
-  // }, []);
-
   return (
-    <section
-      className={`mx-auto w-full text-center lg:px-big ${class_name}`}
-      // ref={component}
-    >
+    <section className={`mx-auto w-full text-center lg:px-big ${class_name}`}>
       {!all_products && (
         <h1 className="title-our-products text-xl font-extrabold uppercase tracking-wide text-primary-heading-main md:mb-10 md:text-3xl">
           Our Products
@@ -53,6 +21,7 @@ function Products({ all_products = false, class_name = "" }) {
         <ProductCard
           key={product.id}
           id={product.id}
+          slug={product.slug}
           title={product.title}
           description={product.description}
           image={product.image}
